@@ -38,9 +38,9 @@ Para volver a verificar, salga de Terminal y reinícielo. Ejecute echo $PATH. De
 ¡Finalmente, actualice sus pruebas para que se ejecuten con Chrome y ejecute sus pruebas!
 Instale el complemento Cucumber en el IDE de su elección.
 Cree el proyecto para descargar las dependencias especificadas en Gradle.build.
-## Modelo de objetos de página Este marco utiliza el modelo de objetos de página, con una página base que se encarga de crear la instancia del controlador y los métodos heredados para interactuar con los elementos web en las clases dentro del directorio de páginas.
+## Page Object Model Este Framework utiliza el modelo de objetos de página, con una página base que se encarga de crear la instancia del controlador y los métodos heredados para interactuar con los elementos web en las clases dentro del directorio de páginas.
 
-Características y pepino
+## Características y Cucumber
 
 Las funciones con los escenarios que contienen las pruebas reales deben actuar como una documentación en vivo. Evite usar los escenarios para describir vagamente lo que están tratando de lograr. Haga una verificación cruzada o haga que un compañero revise el escenario, preferiblemente un analista comercial (aún mejor si puede escribir los escenarios y proporcionárselos a usted, el ingeniero de pruebas)
 
