@@ -9,11 +9,11 @@ import pages.BasePage;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/features",
+    features = "src/test/resources/features/Google.feature",
     glue = "steps",
     plugin = { "pretty", "html:target/cucumber-reports"},
     monochrome = true,
-    tags = "@TradeMe"
+    tags = "@Test"
 )
 
 public class runner {

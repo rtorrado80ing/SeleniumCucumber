@@ -10,7 +10,7 @@ pipeline{
       stage("Tareas de limpieza"){
           steps{
               //Agarrar el repo en el que esta el codigo que necesitamos correr
-              git 'https://github.com/TheFreeRangeTester/SeleniumCucumber.git'
+              git 'https://github.com/rtorrado80ing/SeleniumCucumber.git'
               //Ejecutar la tarea clean de Gradle
               sh 'gradle clean'
           }

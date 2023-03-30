@@ -17,21 +17,27 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BasePage {
 
     protected static WebDriver driver;
+    private static WebDriverWait wait; //Espera general
     private static Actions action;
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+ //   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
   
     static {
+        System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\drivers\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(chromeOptions);
+        wait = new WebDriverWait(driver, 60);
         
     }
 
     public BasePage(WebDriver driver){
         BasePage.driver = driver;
+        wait = new WebDriverWait(driver, 60); //Espera hasta que se muestre el objeto
         
     }
 
     public static void navigateTo(String url){
+        driver.manage().window().maximize();
         driver.get(url);
     }
 
